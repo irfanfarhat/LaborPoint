@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+/* HEADER */
+header{
+    background: #1D4354;
+    width: 100%;
+    height: 90px;
+    color: #FDFEFE;
+}
+
+/* HEADER CLASS  */
+.header{
+    z-index: 10;
+    margin-top: 0;
+    position: fixed;
+    top:0;
+}
+
+/* LOGO TEXT LABORPOINT */
+.logo h1{
+    margin: 0 0 0 2%;
+    text-transform: uppercase;
+    padding-top: 1%;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LOGO SLOGAN  */
+.logo span{
+    font-family: 'Segoe UI';
+    font-size: 21px;
+    font-weight: bold;
+    margin-left:5%;
+    position: relative;
+    bottom: 10px;
+}
+
+/* HEADER RIGHT SIDE / REGISTRATION AREA */
+.reg{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    position: relative;
+    bottom: 60px;
+    color: white;
+    font-family: Arial;
+    font-size: 35px ;
+    align-content: center;
+}
+
+/* REGISTRATION LINKS */
+.reg a{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+/* HOVER EFFECT FOR REGISTRATION BUTTONS */
+.reg a:hover{
+    background-color: #b7c3c8;
+    border-radius: 3px;
+    color: teal;
+}
+
+/* HEADER FINISHED
+SIDE BAR STARTED */
+
+/* HAMBURGER BUTTON  */
+label #sidebar_btn{
+    z-index: 1;
+    color: black;
+    cursor: pointer;
+    float: right;
+    font-size: 50px;
+    margin-right: 5%;
+}
+
+/* SIDEBAR TO LEFT WHEN CLICKED BY BUTTON */
+#check:checked ~ .sidebar{
+    left: -15%;
+    background-color: #1D4354;
+    transition:0.5s;
+}
+
+/* SIDEBAR CONTENT HIDDEN */
+#check:checked ~ .sidebar .sidebar_content{
+    display: none;
+}
+
+/* CONTENT TRANSITION TO LEFT WHEN SIDEBAR IS HIDDEN */
+#check:checked ~ .content{
+    margin-left: -2%;
+}
+
+/* CHECKBOX BUTTON FOR HAMBURGER MENU HIDDEN */
+#check{
+    display: none;
+}
+
+/* SIDEBAR CLASS */
+.sidebar{ 
+    margin-top: 90px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    z-index: 10;
+    border-right: 4px solid #1D4354;
+}
+
+/* PROFILE PIC INSIDE SIDEBAR */
+.sidebar .profile_pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+/* CENTER AREA /NAME AND PIC INSIDE SIDEBAR */
+center{
+    padding-top: 80px;
+}
+
+/* PROFILE NAME TEXT */
+.profile_name{
+    position: relative;
+    font-family: 'Segoe UI';
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    bottom: 15px;
+    padding-bottom: 30px;
+}
+
+/* SIDEBAR LINKS  */
+.sidebar a{
+    font-family: 'Segoe UI';
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10%;
+    text-decoration: none;
+    display: block;
+    color: black;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+/* SIDEBAR LINKS LIST */
+.sidebar li{
+    list-style-type: none;
+    font-family: 'Segoe UI';
+    border-bottom: 4px solid #1D4354;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* TOP BORDER INSIDE SIDEBAR */
+li.top{
+    border-top: 4px solid #1D4354;
+}
+
+/* ALL CONTENT WITHOUT HEADER, FOOTER AND SIDEBAR */
+.content {
+    margin-left: 20%;
+    transition:0.5s;
+    padding-bottom: 100px;
+}
+
+/* WE ARE JUST CLICK AWAY TEXT */
+h2{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Segoe UI';
+    position: relative;
+    font-weight: 800;
+}
+
+/* SOCIAL MEDIA LINKS AND CONTENT BELOW HEADER */
+.container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 90px;
+    bottom: 90px;
+}
+
+/* CONTENT BELOW HEADER */
+.section{
+    height: 100%;
+    margin-top: 70px;
+    position: relative;
+    margin-bottom: 120px;
+    padding-left: 10%;
+}
+
+/* GET VERIFIED WORKERS TEXT */
+.section p{
+    font-size:30px;
+    color: #CC592D;
+    position: relative;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    text-align: center;
+    margin-left: 380PX;
+    bottom: 20px;
+}
+
+/* SOCIAL MEDIA LINKS */
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    position:relative;
+    bottom: 250px;
+    margin-right: 30px;
+}
+
+/* SOCIAL MEDIA IMAGES */
+.socialmedia img{
+    height: 50px;
+    width: 50px;
+}
+
+/* CATEGORIES */
+.flex_container  {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+/* CATEGORIES IMAGES */
+.items img{
+    height: 80%;
+    width: 80%;
+}
+
+/* CATEGORIES TEXT / ELECTRICIAN ETC */
+.items p{
+    font-family: 'Segoe UI';
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* CATEGORIES LINKS */
+.items a{
+    text-decoration: none;
+    color: black;
+}
+
+/* HOVER EFFECT FOR CATEGORIES */
+.items a:hover{
+    background-color: #b7c3c8;
+    border-radius: 3px;
+}
+
+/* FOOTER AREA  */
+footer{
+    background: #1D4354;
+    width: 100%;
+    height: 90px;
+    color: #FDFEFE;
+    position: absolute; 
+    z-index: 20;
+    bottom: 0; 
+}
+
+/* FOOTER CLASS */
+.footer{
+    font-weight: bold;
+    height: 90px;
+    font-family: 'Segoe UI';
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+/* FOOTER LINKS */
+footer a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* FOOTER LINKS HOVER EFFECT */
+.footer a:hover{
+    background-color: #b7c3c8;
+    border-radius: 3px;
+    color: teal;
+}
+
+/* FOOTER LIST AS LINKS */
+.footer li{
+    position: relative;
+    display: inline;
+    margin: 60px;
+    top: 15px;
+} 
+
+/* FOOTER COPYRIGHT DECLARATION */
+.footer p{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    bottom: 0;
+}
