@@ -2,12 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 html{
     position: relative;
     min-height: 100%;
 }
-
+body{
+    background-color: #dee4eb;
+}
 /* HEADER */
 header{
     background: #1D4354;
@@ -68,7 +71,7 @@ header{
 
 /* HOVER EFFECT FOR REGISTRATION BUTTONS */
 .reg a:hover{
-    background-color: #b7c3c8;
+    background-color: #bac8cf;
     border-radius: 3px;
     color: teal;
 }
@@ -248,7 +251,13 @@ h2{
     align-items: center;
     text-align: center;
 }
-
+/* items class */
+.items{
+    background-color:#ffffff;
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+}
 /* CATEGORIES IMAGES */
 .items img{
     height: 80%;
@@ -266,12 +275,6 @@ h2{
 .items a{
     text-decoration: none;
     color: black;
-}
-
-/* HOVER EFFECT FOR CATEGORIES */
-.items a:hover{
-    background-color: #b7c3c8;
-    border-radius: 3px;
 }
 
 /* FOOTER AREA  */
