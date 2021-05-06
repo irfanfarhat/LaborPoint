@@ -1,0 +1,406 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	background-color: #f4f6f8;
+	font-family: Arial;
+}
+.container-fuid {
+	margin: 5px 50px 0px 50px;
+}
+.upper {
+	position: relative;
+	margin-top: 85px;
+}
+.cat_name {
+	margin: 5px 0px 10px 0px;
+	font-size: 30px;
+	font-weight: bolder;
+}
+.main_search_div {
+	margin: 5px 0px 10px 0px;
+	border: 1px solid rgba(71, 67, 67, 0.616);
+	border-top: 3px solid #1d4354;
+	border-radius: 4px;
+}
+#main_search {
+	width: 90%;
+	font-size: 20px;
+	font-weight: bolder;
+	opacity: 0.8;
+}
+.search_by {
+	font-size: large;
+	font-weight: bold;
+	margin: 10px 0px 20px 0px;
+}
+select {
+	width: 160px;
+	height: 31px;
+	border: 1px solid rgba(71, 67, 67, 0.616);
+	border-radius: 3px;
+}
+.details {
+	padding: 0;
+	margin-left: -30px;
+}
+.labor_name {
+	font-size: 25px;
+	font-weight: 800;
+}
+.labor_level {
+	font-size: 20px;
+	margin: -19px 0px 0px 0px;
+	opacity: 0.5;
+	font-weight: 700;
+}
+.labor_experience {
+	font-size: 22px;
+	font-weight: 700;
+}
+.employee {
+	padding: 0px;
+	margin: 0px 0px 20px 0px;
+	border: 1px solid rgba(71, 67, 67, 0.616);
+	/* border-left: none;
+	border-right: none; */
+	border-radius: 4px;
+}
+.card-body {
+	background-color: #f4f6f8;
+}
+.profile_div {
+	margin-left: 25px;
+}
+#profile_pic {
+	width: 90px;
+}
+.rating {
+	display: flex;
+	margin: 0px 0px 0px 190px;
+}
+.stars {
+	padding: 0px 8px 0px 10px;
+}
+#star {
+	width: 23px;
+}
+.rating_points {
+	font-size: 21px;
+	font-weight: bold;
+	color: #ff4081;
+}
+
+/* ///////////////////////////////////////////////// */
+
+/* HEADER FINISHED
+SIDE BAR STARTED */
+
+/* HAMBURGER BUTTON  */
+label #sidebar_btn {
+	z-index: 1;
+	color: black;
+	cursor: pointer;
+	float: right;
+	font-size: 50px;
+	margin-right: 5%;
+}
+
+/* SIDEBAR TO LEFT WHEN CLICKED BY BUTTON */
+#check:checked ~ .sidebar {
+	left: -15%;
+	background-color: #1d4354;
+	transition: 0.5s;
+}
+
+/* SIDEBAR CONTENT HIDDEN */
+#check:checked ~ .sidebar .sidebar_content {
+	display: none;
+}
+
+/* CONTENT TRANSITION TO LEFT WHEN SIDEBAR IS HIDDEN */
+#check:checked ~ .content {
+	margin-left: -2%;
+}
+
+/* CHECKBOX BUTTON FOR HAMBURGER MENU HIDDEN */
+#check {
+	display: none;
+}
+
+/* SIDEBAR CLASS */
+.sidebar {
+	margin-top: 90px;
+	padding-top: 30px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 20%;
+	height: 100%;
+	background-color: white;
+	z-index: 10;
+	border-right: 4px solid #1d4354;
+}
+
+/* PROFILE PIC INSIDE SIDEBAR */
+.sidebar .profile_pic {
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	margin-bottom: 10px;
+}
+
+/* CENTER AREA /NAME AND PIC INSIDE SIDEBAR */
+center {
+	padding-top: 80px;
+}
+
+/* PROFILE NAME TEXT */
+.profile_name {
+	position: relative;
+	font-family: 'Segoe UI';
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	bottom: 15px;
+	padding-bottom: 30px;
+}
+
+/* SIDEBAR LINKS  */
+.sidebar a {
+	font-family: 'Segoe UI';
+	font-size: 25px;
+	font-weight: bold;
+	padding-left: 10%;
+	text-decoration: none;
+	display: block;
+	color: black;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+/* SIDEBAR LINKS LIST */
+.sidebar li {
+	list-style-type: none;
+	font-family: 'Segoe UI';
+	border-bottom: 4px solid #1d4354;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* TOP BORDER INSIDE SIDEBAR */
+li.top {
+	border-top: 4px solid #1d4354;
+}
+.content {
+	margin-left: 20%;
+	transition: 0.5s;
+	padding-bottom: 100px;
+}
+/* FOOTER AREA  */
+footer {
+	background: #1d4354;
+	width: 100%;
+	height: 90px;
+	color: #fdfefe;
+	position: absolute;
+	z-index: 20;
+	bottom: 0;
+}
+/* HEADER */
+header {
+	background: #1d4354;
+	width: 100%;
+	height: 90px;
+	color: #fdfefe;
+}
+
+/* HEADER CLASS  */
+.header {
+	z-index: 10;
+	margin-top: 0;
+	position: fixed;
+	top: 0;
+}
+
+/* LOGO TEXT LABORPOINT */
+.logo h1 {
+	margin: 0 0 0 2%;
+	text-transform: uppercase;
+	padding-top: 1%;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LOGO SLOGAN  */
+.logo span {
+	font-family: 'Segoe UI';
+	font-size: 21px;
+	font-weight: bold;
+	margin-left: 5%;
+	position: relative;
+	bottom: 10px;
+}
+
+/* HEADER RIGHT SIDE / REGISTRATION AREA */
+.reg {
+	display: flex;
+	flex-direction: row;
+	float: right;
+	position: relative;
+	bottom: 60px;
+	color: white;
+	font-family: Arial;
+	font-size: 35px;
+	align-content: center;
+}
+
+/* REGISTRATION LINKS */
+.reg a {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	color: white;
+	border-radius: 10px;
+}
+
+/* HOVER EFFECT FOR REGISTRATION BUTTONS */
+.reg a:hover {
+	background-color: #bac8cf;
+	border-radius: 3px;
+	color: teal;
+}
+
+/* FOOTER CLASS */
+.footer {
+	font-weight: bold;
+	height: 90px;
+	font-family: 'Segoe UI';
+	text-align: center;
+	align-items: center;
+	font-size: 25px;
+}
+
+/* FOOTER AREA  */
+footer {
+	background: #1d4354;
+	width: 100%;
+	height: 110px;
+	color: #fdfefe;
+	position: absolute;
+	z-index: 20;
+	bottom: 0;
+}
+
+/* FOOTER CLASS */
+.footer {
+	font-weight: bold;
+	height: 90px;
+	font-family: 'Segoe UI';
+	text-align: center;
+	align-items: center;
+	font-size: 25px;
+}
+
+/* FOOTER LINKS */
+footer a {
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* FOOTER LINKS HOVER EFFECT */
+.footer a:hover {
+	background-color: #b7c3c8;
+	border-radius: 3px;
+	color: teal;
+}
+
+/* FOOTER LIST AS LINKS */
+.footer li {
+	position: relative;
+	display: inline;
+	margin: 60px;
+	top: 15px;
+}
+
+/* FOOTER COPYRIGHT DECLARATION */
+.footer p {
+	text-align: center;
+	position: relative;
+	top: 20px;
+	bottom: 0;
+}
+
+/* Labor Details */
+.lab_days {
+	position: relative;
+	display: flex;
+	/* float: left; */
+	font-size: 21px;
+	margin: 5px 0 5px 200px;
+}
+
+.days_cont {
+	display: flex;
+	float: left;
+	margin-left: 50px;
+}
+
+.daysNm {
+	border: 1px solid rgba(71, 67, 67, 0.616);
+	border-radius: 50px;
+	padding: 2px 10px;
+	margin-right: 15px;
+	background-color: #ffffff;
+	align-items: center;
+	font-weight: bold;
+}
+#daysNmTue {
+	background-color: #009688;
+}
+#daysNmWed {
+	background-color: #009688;
+}
+#daysNmFri {
+	background-color: #009688;
+}
+
+/* /PRICE AND SEND PROPOSAL START */
+hr {
+	width: 100%;
+	border: 1px solid rgba(71, 67, 67, 0.616);
+}
+.price_propsal {
+	position: relative;
+	display: flex;
+}
+.starting_price {
+	position: relative;
+	font-size: 24px;
+	font-weight: bold;
+	left: 14.5%;
+}
+.send_prop {
+	position: relative;
+	left: 71%;
+}
+.prop_btn {
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 4px;
+	border-radius: 0px;
+}
+/* /PRICE AND SEND PROPOSAL END */
