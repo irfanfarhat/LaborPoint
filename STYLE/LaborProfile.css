@@ -11,94 +11,6 @@ body {
 	background-color: #f4f6f8;
 	font-family: Arial;
 }
-.container-fuid {
-	margin: 5px 50px 0px 50px;
-}
-.upper {
-	position: relative;
-	margin-top: 85px;
-}
-.cat_name {
-	margin: 5px 0px 10px 0px;
-	font-size: 30px;
-	font-weight: bolder;
-}
-.main_search_div {
-	margin: 5px 0px 10px 0px;
-	border: 1px solid rgba(71, 67, 67, 0.616);
-	border-top: 3px solid #1d4354;
-	border-radius: 4px;
-}
-#main_search {
-	width: 90%;
-	font-size: 20px;
-	font-weight: bolder;
-	opacity: 0.8;
-}
-.search_by {
-	font-size: large;
-	font-weight: bold;
-	margin: 10px 0px 20px 0px;
-}
-select {
-	width: 160px;
-	height: 31px;
-	border: 1px solid rgba(71, 67, 67, 0.616);
-	border-radius: 3px;
-}
-.details {
-	padding: 0;
-	margin-left: -30px;
-}
-.labor_name {
-	font-size: 25px;
-	font-weight: 800;
-}
-.labor_level {
-	font-size: 20px;
-	margin: -19px 0px 0px 0px;
-	opacity: 0.5;
-	font-weight: 700;
-}
-.labor_experience {
-	font-size: 22px;
-	font-weight: 700;
-}
-.employee {
-	padding: 0px;
-	margin: 0px 0px 20px 0px;
-	border: 1px solid rgba(71, 67, 67, 0.616);
-	/* border-left: none;
-	border-right: none; */
-	border-radius: 4px;
-}
-.card-body {
-	background-color: #f4f6f8;
-}
-.profile_div {
-	margin-left: 25px;
-}
-#profile_pic {
-	width: 90px;
-}
-.rating {
-	display: flex;
-	margin: 0px 0px 0px 190px;
-}
-.stars {
-	padding: 0px 8px 0px 10px;
-}
-#star {
-	width: 23px;
-}
-.rating_points {
-	font-size: 21px;
-	font-weight: bold;
-	color: #ff4081;
-}
-
-/* ///////////////////////////////////////////////// */
-
 /* HEADER FINISHED
 SIDE BAR STARTED */
 
@@ -342,14 +254,98 @@ footer a {
 	top: 20px;
 	bottom: 0;
 }
+.container-fuid {
+	margin: 5px 50px 0px 50px;
+}
+.upper {
+	position: relative;
+	margin-top: 85px;
+}
+.cat_name {
+	margin: 5px 0px 10px 0px;
+	font-size: 30px;
+	font-weight: bolder;
+}
+.main_search_div {
+	margin: 5px 0px 10px 0px;
+	border: 1px solid rgba(71, 67, 67, 0.616);
+	border-top: 3px solid #1d4354;
+	border-radius: 4px;
+}
+#main_search {
+	width: 90%;
+	font-size: 20px;
+	font-weight: bolder;
+	opacity: 0.8;
+}
+.search_by {
+	font-size: large;
+	font-weight: bold;
+	margin: 10px 0px 20px 0px;
+}
+select {
+	width: 160px;
+	height: 31px;
+	border: 1px solid rgba(71, 67, 67, 0.616);
+	border-radius: 3px;
+}
+.details {
+	padding: 0;
+	margin-left: -30px;
+}
+.labor_name {
+	font-size: 25px;
+	font-weight: 800;
+}
+.labor_level {
+	font-size: 20px;
+	margin: -19px 0px 0px 0px;
+	opacity: 0.5;
+	font-weight: 700;
+}
+.labor_experience {
+	font-size: 22px;
+	font-weight: 700;
+}
+.employee {
+	padding: 0px;
+	margin: 0px 0px 20px 0px;
+	border: 1px solid rgba(71, 67, 67, 0.616);
+	border-radius: 4px;
+}
+.card-body {
+	background-color: #f4f6f8;
+}
+.profile_div {
+	margin-left: 25px;
+}
+#profile_pic {
+	width: 90px;
+}
+.rating {
+	display: flex;
+	position: relative;
+	bottom: 10px;
+	left: 175px;
+}
+.stars {
+	padding: 0px 8px 0px 10px;
+}
+#star {
+	width: 23px;
+}
+.rating_points {
+	font-size: 21px;
+	font-weight: bold;
+	color: #ff4081;
+}
 
 /* Labor Details */
 .lab_days {
 	position: relative;
 	display: flex;
-	/* float: left; */
+	left: 190px;
 	font-size: 21px;
-	margin: 5px 0 5px 200px;
 }
 
 .days_cont {
@@ -379,7 +375,10 @@ footer a {
 
 /* /PRICE AND SEND PROPOSAL START */
 hr {
-	width: 100%;
+	width: 95%;
+	position: relative;
+	left: 28px;
+	align-content: center;
 	border: 1px solid rgba(71, 67, 67, 0.616);
 }
 .price_propsal {
@@ -388,19 +387,85 @@ hr {
 }
 .starting_price {
 	position: relative;
-	font-size: 24px;
+	font-size: 27px;
 	font-weight: bold;
-	left: 14.5%;
+	left: 14%;
 }
 .send_prop {
-	position: relative;
-	left: 71%;
+	position: absolute;
+	right: 40px;
 }
 .prop_btn {
 	font-family: Arial;
 	font-size: 20px;
 	font-weight: bold;
-	padding: 4px;
+	padding: 4px 6px;
 	border-radius: 0px;
+	background-color: #0059cd;
 }
 /* /PRICE AND SEND PROPOSAL END */
+
+/* COMMENTS SECTION */
+.comment_heading {
+	position: relative;
+	display: flex;
+}
+.comm_label {
+	position: relative;
+	left: 40px;
+	font-size: 27px;
+	font-weight: bold;
+}
+.see_rev {
+	position: absolute;
+	right: 40px;
+	font-size: 21px;
+	color: #7ad06d;
+	font-weight: lighter;
+}
+a {
+	text-decoration: none !important;
+	color: #7ad06d;
+}
+/* COMMENT CARD */
+.comm_card {
+	margin-top: 10px;
+	margin-left: 40px;
+}
+.comm_body {
+	background-color: #ffffff;
+	border-radius: 8px;
+}
+#comm_pic {
+	width: 60px;
+}
+.comm_nm {
+	position: relative;
+	bottom: 50px;
+	left: 90px;
+	font-size: 23px;
+	font-weight: bold;
+}
+.comment {
+	position: relative;
+	left: 90px;
+	bottom: 30px;
+	font-size: 20px;
+}
+/* END COMMENT CARD */
+
+/* DESCRIPTION */
+.desc_head {
+	position: relative;
+	left: 42px;
+	top: 10px;
+	font-size: 33px;
+	font-weight: bolder;
+}
+.desc_detail {
+	position: relative;
+	left: 140px;
+	top: 15px;
+	font-size: 25px;
+	/* font-weight: bold; */
+}
