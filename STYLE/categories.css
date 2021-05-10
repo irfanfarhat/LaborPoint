@@ -35,11 +35,76 @@ body {
 	font-weight: bolder;
 	opacity: 0.8;
 }
+/* SEARCH BY START */
 .search_by {
-	font-size: large;
-	font-weight: bold;
-	margin: 10px 0px 20px 0px;
+	width: 100%;
+	position: relative;
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/* background-color: #ff4081; */
 }
+.search_by h3 {
+	font-weight: bold;
+	font-size: 28px;
+}
+.day,
+.price,
+.times,
+.location {
+	display: flex;
+}
+.day {
+	position: relative;
+	left: 0;
+}
+.price {
+	position: relative;
+	left: 150px;
+}
+.times {
+	position: relative;
+	left: 300px;
+}
+.location {
+	position: relative;
+	left: 428px;
+}
+
+.label_day {
+	position: relative;
+	left: 0;
+}
+.search_day {
+	position: relative;
+	left: 40px;
+}
+.label_price {
+	position: relative;
+	left: 0;
+}
+.search_price {
+	position: relative;
+	left: 40px;
+}
+.label_time {
+	position: relative;
+	left: 0;
+}
+.search_time {
+	position: relative;
+	left: 40px;
+}
+.label_loc {
+	position: relative;
+	left: 0;
+}
+.search_loc {
+	position: relative;
+	left: 40px;
+}
+
+/* SEARCH BY START END*/
 select {
 	width: 160px;
 	height: 31px;
@@ -66,7 +131,7 @@ select {
 }
 .employee {
 	padding: 0px;
-	margin: 0px 0px 20px 0px;
+	margin: 1px 15px 20px 15px;
 	border: 1px solid rgba(71, 67, 67, 0.616);
 	border-radius: 4px;
 }
