@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../STYLE/LaborProfile.css" type="text/css" />
+		<title>Labor Profile</title>
+	</head>
+	<body>
+		<!-- HEADER SECTION  -->
+		<header class="header">
+			<div class="logo">
+				<h1>LABORPOINT</h1>
+				<span>KAR OSHO</span>
+			</div>
+		</header>
+		<!-- SIDE BAR AREA START HERE -->
+		<div class="sidebar">
+			<label for="check">
+				<i class="fas fa-bars" id="sidebar_btn"></i>
+			</label>
+			<div class="sidebar_content">
+				<!-- PROFILE PIC AND NAME -->
+				<center>
+					<img src="../IMAGES/profile.png" class="profile_pic" alt="" />
+					<h3 class="profile_name">KAOKO</h3>
+				</center>
+				<!-- SIDEBAR LINKS -->
+				<ul>
+					<li class="top"><a href="#">Edit Profile</a></li>
+					<li><a href="#">Change Password</a></li>
+					<li><a href="#">Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="container-fluid">
+				<div class="upper">
+					<div class="row">
+						<div class="col">
+							<h2 class="cat_name">Electrician</h2>
+						</div>
+					</div>
+					<!-- MAIN SEARCH  -->
+					<div class="row">
+						<div class="col">
+							<div class="input-group rounded main_search_div">
+								<input type="search" id="main_search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+								<span class="input-group-text border-0" id="search-addon"><i class="fas fa-search"></i></span>
+							</div>
+						</div>
+					</div>
+					<!-- MAIN SEARCH END -->
+
+					<!-- <SEARCH BY CATEGORIES START -->
+					<div class="search_by">
+						<div class="day">
+							<h3 class="label_day">Day</h3>
+							<div class="search_day">
+								<select class="search_by_box" name="" id="">
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</div>
+						</div>
+
+						<div class="price">
+							<h3 class="label_price">Price</h3>
+							<div class="search_price">
+								<select class="search_by_box" name="" id="">
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</div>
+						</div>
+
+						<div class="times">
+							<h3 class="label_time">Time</h3>
+							<div class="search_time">
+								<select class="search_by_box" name="" id="">
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</div>
+						</div>
+
+						<div class="location">
+							<h3 class="label_loc">Location</h3>
+							<div class="search_loc">
+								<select class="search_by_box" name="" id="">
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!-- <SEARCH BY CATEGORIES END -->
+				</div>
+				<div id="container_div_id" class="employee">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-2">
+									<div class="profile_div">
+										<img id="profile_pic" src="../IMAGES/cat_profile.png" alt="image" />
+									</div>
+								</div>
+								<div class="col-sm-10">
+									<div class="details">
+										<p class="labor_name">Adil Khan</p>
+										<p class="labor_level">Level 1</p>
+										<p class="labor_experience">I have 2 years of experience.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="rating">
+								<div class="stars"><img id="star" src="../IMAGES/cat_star.png" alt="star_icon" /></div>
+								<div class="rating_points">4.5</div>
+							</div>
+
+							<div class="lab_days">
+								<div class="av-days">Available Days</div>
+								<div class="days_cont">
+									<div class="daysNm" id="daysNmMon">M</div>
+									<div class="daysNm" id="daysNmTue">T</div>
+									<div class="daysNm" id="daysNmWed">W</div>
+									<div class="daysNm" id="daysNmThu">T</div>
+									<div class="daysNm" id="daysNmFri">F</div>
+									<div class="daysNm" id="daysNmSat">S</div>
+									<div class="daysNm" id="daysNmSun">S</div>
+								</div>
+							</div>
+							<br />
+							<div class="price_propsal">
+								<div class="starting_price">Starting At Rs.1000</div>
+								<div class="send_prop"><button class="btn btn-primary prop_btn">Send Proposal</button></div>
+							</div>
+							<hr />
+							<div class="comment_heading">
+								<div class="comm_label">What people loved about this seller</div>
+								<div class="see_rev"><a href="#"> See all reviews </a></div>
+							</div>
+							<div class="card comm_card" style="width: 95%">
+								<div class="card-body comm_body">
+									<div class="comm_img"><img id="comm_pic" src="../IMAGES/cat_profile.png" alt="img" /></div>
+									<div class="comm_nm">Aslam</div>
+									<div class="comment">At the beganing I was not happy but then</div>
+								</div>
+							</div>
+							<!-- COMMENT-CARD-BODY ENDS -->
+							<div class="descrip">
+								<div class="desc_head">Description</div>
+								<div class="desc_detail">I have three year of experience.</div>
+							</div>
+							<div style="height: 150px"></div>
+						</div>
+						<!-- MAIN-CARD-BODY ENDS -->
+					</div>
+				</div>
+				<!-- // END EMPLOYEES BOX // -->
+			</div>
+		</div>
+		<footer>
+			<!-- FOOTER AREA -->
+			<div class="footer">
+				<!-- FOOTER LINKS -->
+				<ul>
+					<li><a href="#">Privacy</a></li>
+					<span class="separator"></span>
+					<li><a href="#">Term & Conditions</a></li>
+					<span class="separator"></span>
+					<li><a href="#">Contact Us</a></li>
+					<span class="separator"></span>
+					<li><a href="#">About Us</a></li>
+				</ul>
+				<!-- FOOTER COPYRIGHT DECLARATION -->
+				<p>&copy;LaborPoint. All Right Reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>
