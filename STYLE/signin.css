@@ -1,0 +1,77 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	
+	background-size: 100%;
+	background-color: rgba(0.1,0.1,0.1,0.1);
+
+}
+div.main{
+   
+	width: 350px;
+	height: auto;
+    margin:30px auto 0px auto;
+
+}
+
+h2{
+	text-align: center;
+	
+	font-size: 40px;
+	
+
+}
+div.signin{
+	
+	width: 88%;
+	font-size: 18px;
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,0.8) ;
+	box-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+	color: #1F4556;
+	background-color: white;
+
+}
+
+.form{
+	margin: 20px;
+
+    
+}
+.email{
+	width: 250px;
+	padding: 5px;
+}
+.password{
+	width: 250px;
+	padding: 5px;
+}
+.fpassword{
+	font-size: 10px;
+	text-align: center;
+
+}
+.NALPY{
+	font-size: 15px;
+	text-align: center;
+
+
+
+}
+.login{ 
+	width: 150px;
+	padding: 4px;
+	font-size: 13px;
+	font-weight: 650;
+	border: 3px;
+	border-radius: 3px;
+	background-color: #0059CD;
+	position: relative;
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+    
+}
